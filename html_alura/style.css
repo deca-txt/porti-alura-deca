@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-principal: rgb(114, 26, 26);
+}
+
+body {
+    box-sizing: border-box;
+    /* height: 100vh;     */
+    background-color: #000;
+    color: #F6F6F6;
+    background-image: radial-gradient(circle, rgba(88, 21, 76, 0.2), rgba(88, 21, 76, 0.2), rgba(88, 21, 76, 0.2), rgba(88, 21, 76, 0.2), rgba(88, 21, 76, 0.2), var(--cor-principal), rgba(0, 0, 0, 1));
+    background-attachment: fixed;
+}
+
+
+
+.apresentacao {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Krona One", sans-serif;
+    font-size: 2.25rem;
+    gap: 32px;
+  }
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.apresentacao__links__link {
+    /* background-color: rgb(33, 192, 89); */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid var(--cor-principal);
+    width: 70%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.apresentacao__links__link:hover {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 1px solid var(--cor-principal);
+    width: 70%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    background-image: url('WIN_20240911_18_59_36_Pro.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.imagem__principal {
+    width: 50%;
+    border-radius: 1.25rem;
+    border-color: var(--cor-principal);
+    border-style: double;
+}
+
+.titulo-destaque {
+    color: var(--cor-principal);
+}
+
+
+
+.rodape {
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    background-color: #1e423f;
+    font-family: Helvetica, sans-serif;
+}
+
+.cabecalho__menu__links {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;  
+    text-decoration: none; 
+}
+
+.cabecalho__menu__links:hover{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-principal); 
+    text-decoration: overline;
+}
+
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 5rem;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        padding: 8% 1%;
+      }
+
+      .apresentacao__conteudo {
+        width: auto;
+        text-align: center;
+    }
+
+    .cabecalho {
+        padding: 10%
+    }
+
+    .cabecalho__menu {
+    justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+}
+
+
+  
